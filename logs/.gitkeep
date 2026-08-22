@@ -1,0 +1,7 @@
+# Logs directory
+# Runtime CSV and log files are written here during simulation.
+# Files created at runtime:
+#   system.log          - System events
+#   train_state.csv     - Per-tick train state
+#   conflicts.csv       - Detected conflicts
+#   control_actions.csv - Applied resolutions
