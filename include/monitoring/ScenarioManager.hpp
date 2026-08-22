@@ -3,6 +3,7 @@
 #include "railway/RailwayNetwork.hpp"
 #include "railway/RouteManager.hpp"
 #include <functional>
+#include <cstddef>
 #include <string>
 
 namespace tca {
@@ -21,7 +22,7 @@ public:
                     RouteManager&      rm);
 
     /// Load one of the pre-defined scenarios by name.
-    ScenarioConfig load(const std::string& scenarioName);
+    ScenarioConfig load(const std::string& scenarioName, std::size_t trainCount = 0);
 
     // Pre-defined scenarios
     ScenarioConfig scenario_NormalOps();
@@ -33,12 +34,15 @@ public:
     ScenarioConfig scenario_SensorFault();
     ScenarioConfig scenario_MultiConflict();
     ScenarioConfig scenario_EmergencyBrake();
-    ScenarioConfig scenario_HighDensity();
+    ScenarioConfig scenario_HighDensity(std::size_t trainCount = 10);
 
 private:
     void clearAll();
     void buildLinearNetwork(int stationCount, double segmentLenM);
     void buildBranchNetwork();
+    void writeTopology(const std::string& scenarioName,
+                       const std::vector<std::string>& nodes,
+                       const std::vector<std::string>& tracks);
 
     TrainStateManager& tsm_;
     RailwayNetwork&    net_;

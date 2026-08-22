@@ -1,0 +1,1 @@
+{"scenario":"linear","nodes":[{"id":1,"name":"A","type":"station","x":0.000000,"y":0},{"id":2,"name":"B","type":"station","x":5000.000000,"y":0}],"tracks":[{"id":1,"name":"A-B","from":1,"to":2,"length":5000.000000}]}

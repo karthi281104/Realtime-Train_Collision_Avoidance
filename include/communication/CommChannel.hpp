@@ -22,7 +22,7 @@ public:
     CommChannel(double delayMs = 100.0, double jitterMs = 30.0,
                 double lossRate = 0.02, unsigned seed = 42u);
 
-    void send(const TrainData& state, double simNow);
+    void send(const TrainData& state, double simNow, double wallNowSeconds = 0.0);
 
     /// Drain messages whose wall-clock time has arrived.
     std::vector<TrainData> receive(double wallNowSeconds);

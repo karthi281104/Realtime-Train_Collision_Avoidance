@@ -19,4 +19,6 @@ struct Junction {
     void unlock()            { locked = false; lockHolder = 0;   }
 };
 
+std::string_view toString(JunctionType type);
+
 } // namespace tca

@@ -44,8 +44,9 @@ void SimulationEngine::runBlocking(double durationSeconds) {
             for(auto& r : resolutions) el_.logResolution(r, clk_.simTime());
         }
 
-        // Log all train states
-        for(auto& td : snap) el_.logTrainState(td, clk_.simTime());
+        // Log post-resolution train states
+        auto postSnap = tsm_.snapshot();
+        for(auto& td : postSnap) el_.logTrainState(td, clk_.simTime());
 
         clk_.tick();
     }
@@ -59,8 +60,18 @@ void SimulationEngine::loop() {
 
         auto snap      = tsm_.snapshot();
         auto conflicts = cm_.update(snap, clk_.simTime());
-        if(!conflicts.empty())
-            cr_.resolve(conflicts, tsm_, net_, clk_.simTime());
+        for(const auto& conflict : conflicts)
+            el_.logConflict(conflict);
+
+        if(!conflicts.empty()) {
+            auto resolutions = cr_.resolve(conflicts, tsm_, net_, clk_.simTime());
+            for(const auto& resolution : resolutions)
+                el_.logResolution(resolution, clk_.simTime());
+        }
+
+        auto postSnap = tsm_.snapshot();
+        for(const auto& td : postSnap)
+            el_.logTrainState(td, clk_.simTime());
 
         clk_.tick();
     }

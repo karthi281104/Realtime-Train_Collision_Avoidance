@@ -10,7 +10,7 @@ CommChannel::CommChannel(double delayMs, double jitterMs, double lossRate, unsig
       lossDist_(0.0, 1.0)
 {}
 
-void CommChannel::send(const TrainData& state, double simNow) {
+void CommChannel::send(const TrainData& state, double simNow, double wallNowSeconds) {
     std::lock_guard lk(mtx_);
     // Packet loss check
     if(lossDist_(rng_) < lossRate_) return;  // dropped
@@ -22,7 +22,7 @@ void CommChannel::send(const TrainData& state, double simNow) {
     msg.senderId = state.id;
     msg.payload  = state;
     msg.sentAtSimTime    = simNow;
-    msg.arriveAtWallTime = totalDelayS;  // relative delay
+    msg.arriveAtWallTime = wallNowSeconds + totalDelayS;
     pending_.push_back(std::move(msg));
 }
 

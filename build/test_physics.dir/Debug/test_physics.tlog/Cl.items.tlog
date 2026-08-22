@@ -1,0 +1,7 @@
+D:\CPP-POC\Realtime-Train_Collision_Avoidance\tests\test_physics.cpp;D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\test_physics.dir\Debug\test_physics.obj
+D:\CPP-POC\Realtime-Train_Collision_Avoidance\src\core\Types.cpp;D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\test_physics.dir\Debug\Types.obj
+D:\CPP-POC\Realtime-Train_Collision_Avoidance\src\core\Logger.cpp;D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\test_physics.dir\Debug\Logger.obj
+D:\CPP-POC\Realtime-Train_Collision_Avoidance\src\train\Train.cpp;D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\test_physics.dir\Debug\Train.obj
+D:\CPP-POC\Realtime-Train_Collision_Avoidance\src\train\TrainPhysics.cpp;D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\test_physics.dir\Debug\TrainPhysics.obj
+D:\CPP-POC\Realtime-Train_Collision_Avoidance\src\train\PassengerTrain.cpp;D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\test_physics.dir\Debug\PassengerTrain.obj
+D:\CPP-POC\Realtime-Train_Collision_Avoidance\src\train\TrainStateManager.cpp;D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\test_physics.dir\Debug\TrainStateManager.obj

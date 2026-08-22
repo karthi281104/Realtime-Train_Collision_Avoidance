@@ -9,9 +9,9 @@ void MessageBus::registerTrain(TrainId id, double delayMs, double jitterMs, doub
                       std::forward_as_tuple(delayMs, jitterMs, lossRate, id));
 }
 
-void MessageBus::broadcast(const TrainData& state, double simNow) {
+void MessageBus::broadcast(const TrainData& state, double simNow, double wallNow) {
     auto it = channels_.find(state.id);
-    if(it != channels_.end()) it->second.send(state, simNow);
+    if(it != channels_.end()) it->second.send(state, simNow, wallNow);
 }
 
 void MessageBus::processIncoming(TrainStateManager& tsm, double wallNow) {

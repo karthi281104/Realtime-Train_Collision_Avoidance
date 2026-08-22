@@ -18,7 +18,8 @@ ControlCenter::~ControlCenter() {
     Logger::instance().shutdown();
 }
 
-bool ControlCenter::init(const std::string& configPath, const std::string& scenario) {
+bool ControlCenter::init(const std::string& configPath, const std::string& scenario,
+                         std::size_t trainCount) {
     Logger::instance().init("logs", LogLevel::INFO);
     LOG_INFO("=== Train Collision Avoidance System Starting ===");
 
@@ -32,7 +33,7 @@ bool ControlCenter::init(const std::string& configPath, const std::string& scena
     el_.init("logs");
 
     LOG_INFO("Loading scenario: " << scenario);
-    auto sc = scenarios_.load(scenario);
+    auto sc = scenarios_.load(scenario, trainCount);
     LOG_INFO("Scenario: " << sc.name << " | " << sc.description);
 
     net_.print();
@@ -61,11 +62,11 @@ void ControlCenter::stop() {
     LOG_INFO("System shutdown complete.");
 }
 
-void ControlCenter::runScenario(const std::string& name, double seconds) {
+void ControlCenter::runScenario(const std::string& name, double seconds, std::size_t trainCount) {
     Logger::instance().init("logs", LogLevel::INFO);
     el_.init("logs");
 
-    auto sc = scenarios_.load(name);
+    auto sc = scenarios_.load(name, trainCount);
     LOG_INFO("Running scenario '" << sc.name << "' for " << seconds << "s");
     net_.print();
     tsm_.print();

@@ -34,7 +34,7 @@ private:
 
     std::mutex    mtx_;
     std::ofstream file_;
-    LogLevel      minLevel_{LogLevel::INFO};
+    std::atomic<LogLevel> minLevel_{LogLevel::INFO};
     bool          initialized_{false};
     bool          echoConsole_{true};
 };

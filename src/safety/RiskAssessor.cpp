@@ -63,7 +63,8 @@ ConflictManager::update(const std::vector<TrainData>& snapshot, double simNow) {
     return active_;
 }
 
-const std::vector<ConflictInfo>& ConflictManager::activeConflicts() const {
+std::vector<ConflictInfo> ConflictManager::activeConflicts() const {
+    std::lock_guard lk(mtx_);
     return active_;
 }
 

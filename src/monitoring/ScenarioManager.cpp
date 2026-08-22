@@ -2,6 +2,7 @@
 #include "train/TrainSubtypes.hpp"
 #include "core/Logger.hpp"
 #include <iostream>
+#include <fstream>
 #include <memory>
 
 namespace tca {
@@ -12,7 +13,7 @@ ScenarioManager::ScenarioManager(TrainStateManager& tsm,
     : tsm_(tsm), net_(net), rm_(rm)
 {}
 
-ScenarioConfig ScenarioManager::load(const std::string& name) {
+ScenarioConfig ScenarioManager::load(const std::string& name, std::size_t trainCount) {
     if(name == "normal")        return scenario_NormalOps();
     if(name == "rear_end")      return scenario_RearEnd();
     if(name == "head_on")       return scenario_HeadOn();
@@ -22,7 +23,7 @@ ScenarioConfig ScenarioManager::load(const std::string& name) {
     if(name == "sensor_fault")  return scenario_SensorFault();
     if(name == "multi_conflict")return scenario_MultiConflict();
     if(name == "emergency")     return scenario_EmergencyBrake();
-    if(name == "high_density")  return scenario_HighDensity();
+    if(name == "high_density")  return scenario_HighDensity(trainCount == 0 ? 10 : trainCount);
 
     LOG_WARN("Unknown scenario: " << name << " – defaulting to rear_end");
     return scenario_RearEnd();
@@ -37,8 +38,7 @@ ScenarioConfig ScenarioManager::scenario_NormalOps() {
     auto addP = [&](TrainId id, const std::string& nm, uint32_t from, uint32_t to,
                     double posM, double kmh) {
         auto t = std::make_unique<PassengerTrain>(id, nm, from, to, posM, kmh);
-        t->data().currentTrackId = rm_.assignRoute(id, from, to) > 0 ? 1u : 1u;
-        // Assign track 1 manually since tracks are numbered 1..4
+        rm_.assignRoute(id, from, to);
         if(auto* r = rm_.routeForTrain(id); r) {
             t->data().currentTrackId = r->currentTrack();
             t->data().currentFromNode = from;
@@ -177,11 +177,11 @@ ScenarioConfig ScenarioManager::scenario_EmergencyBrake() {
     return sc;
 }
 
-ScenarioConfig ScenarioManager::scenario_HighDensity() {
+ScenarioConfig ScenarioManager::scenario_HighDensity(std::size_t trainCount) {
     clearAll();
     buildLinearNetwork(6, 3000.0);
     TrainId id = 1;
-    for(int i = 0; i < 10; ++i) {
+    for(std::size_t i = 0; i < trainCount; ++i) {
         double pos   = i * 250.0;
         double speed = 60.0 + (i % 3) * 15.0;
         auto t = std::make_unique<PassengerTrain>(id, "T" + std::to_string(id), 1, 6, pos, speed);
@@ -200,21 +200,38 @@ ScenarioConfig ScenarioManager::scenario_HighDensity() {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 void ScenarioManager::clearAll() {
-    // Clear network by reconstruction isn't directly exposed; we rely on a fresh
-    // instance being passed, but for repeated calls in the same run we just log.
-    LOG_INFO("Scenario: resetting (note: call with fresh objects for full reset)");
+    LOG_INFO("Scenario: resetting network, trains, and routes...");
+    tsm_.clear();
+    rm_.clear();
+    net_.clear();
 }
 
 void ScenarioManager::buildLinearNetwork(int stationCount, double segmentLenM) {
     std::vector<uint32_t> ids;
+    std::vector<std::string> nodes;
+    std::vector<std::string> tracks;
     char nm = 'A';
-    for(int i = 0; i < stationCount; ++i, ++nm)
+    for(int i = 0; i < stationCount; ++i, ++nm) {
         ids.push_back(net_.addStation(std::string(1, nm), i * segmentLenM, 0.0));
-    for(int i = 0; i + 1 < stationCount; ++i)
-        net_.addTrack(std::string(1, char('A'+i)) + "-" + std::string(1, char('A'+i+1)),
+        nodes.push_back("{\"id\":" + std::to_string(ids.back()) +
+                        ",\"name\":\"" + std::string(1, nm) +
+                        "\",\"type\":\"station\",\"x\":" +
+                        std::to_string(i * segmentLenM) + ",\"y\":0}");
+    }
+    for(int i = 0; i + 1 < stationCount; ++i) {
+        const auto trackName = std::string(1, char('A' + i)) + "-" +
+                               std::string(1, char('A' + i + 1));
+        const auto trackId = net_.addTrack(trackName,
                       ids[static_cast<std::size_t>(i)],
                       ids[static_cast<std::size_t>(i+1)],
                       segmentLenM, 160.0, true);
+        tracks.push_back("{\"id\":" + std::to_string(trackId) +
+                         ",\"name\":\"" + trackName + "\",\"from\":" +
+                         std::to_string(ids[static_cast<std::size_t>(i)]) +
+                         ",\"to\":" + std::to_string(ids[static_cast<std::size_t>(i+1)]) +
+                         ",\"length\":" + std::to_string(segmentLenM) + "}");
+    }
+    writeTopology("linear", nodes, tracks);
 }
 
 void ScenarioManager::buildBranchNetwork() {
@@ -224,9 +241,29 @@ void ScenarioManager::buildBranchNetwork() {
     uint32_t j = net_.addJunction("J1");
     uint32_t c = net_.addStation("C", 0, 2000);
     uint32_t d = net_.addStation("D", 3000, 1000);
-    net_.addTrack("A-J", a, j, 2000.0, 120.0, true);
-    net_.addTrack("C-J", c, j, 2000.0, 120.0, true);
-    net_.addTrack("J-D", j, d, 2000.0, 120.0, true);
+    TrackId tk1 = net_.addTrack("A-J", a, j, 2000.0, 120.0, true);
+    TrackId tk2 = net_.addTrack("C-J", c, j, 2000.0, 120.0, true);
+    TrackId tk3 = net_.addTrack("J-D", j, d, 2000.0, 120.0, true);
+    writeTopology("junction",
+        {"{\"id\":" + std::to_string(a) + ",\"name\":\"A\",\"type\":\"station\",\"x\":0,\"y\":0}",
+         "{\"id\":" + std::to_string(j) + ",\"name\":\"J1\",\"type\":\"junction\",\"x\":2000,\"y\":1000}",
+         "{\"id\":" + std::to_string(c) + ",\"name\":\"C\",\"type\":\"station\",\"x\":0,\"y\":2000}",
+         "{\"id\":" + std::to_string(d) + ",\"name\":\"D\",\"type\":\"station\",\"x\":3000,\"y\":1000}"},
+        {"{\"id\":" + std::to_string(tk1) + ",\"name\":\"A-J\",\"from\":" + std::to_string(a) + ",\"to\":" + std::to_string(j) + ",\"length\":2000}",
+         "{\"id\":" + std::to_string(tk2) + ",\"name\":\"C-J\",\"from\":" + std::to_string(c) + ",\"to\":" + std::to_string(j) + ",\"length\":2000}",
+         "{\"id\":" + std::to_string(tk3) + ",\"name\":\"J-D\",\"from\":" + std::to_string(j) + ",\"to\":" + std::to_string(d) + ",\"length\":2000}"});
+}
+
+void ScenarioManager::writeTopology(const std::string& scenarioName,
+                                     const std::vector<std::string>& nodes,
+                                     const std::vector<std::string>& tracks) {
+    std::ofstream file("logs/topology.json", std::ios::trunc);
+    if(!file) return;
+    file << "{\"scenario\":\"" << scenarioName << "\",\"nodes\":[";
+    for(std::size_t i = 0; i < nodes.size(); ++i) file << (i ? "," : "") << nodes[i];
+    file << "],\"tracks\":[";
+    for(std::size_t i = 0; i < tracks.size(); ++i) file << (i ? "," : "") << tracks[i];
+    file << "]}";
 }
 
 } // namespace tca

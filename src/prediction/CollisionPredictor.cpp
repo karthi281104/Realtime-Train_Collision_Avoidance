@@ -113,7 +113,7 @@ PredictionResult CollisionPredictor::checkHeadOn(const TrainData& a,
     double relVel = a.velocityMs + b.velocityMs;
 
     PredictionResult res;
-    res.minSeparationM = currentSep - relVel * std::min(ttc, horizon_);
+    res.minSeparationM = std::max(0.0, currentSep - relVel * std::min(ttc, horizon_));
 
     if(res.minSeparationM < reqSep) {
         ConflictInfo ci;
@@ -143,10 +143,13 @@ PredictionResult CollisionPredictor::checkJunction(const TrainData& a,
     if(!nd || !nd->isJunction) return {};
 
     // Time for each to reach junction
-    auto timeToJunc = [](const TrainData& td) -> double {
-        auto* _ = &td; (void)_;
-        // Approximate: remaining distance / speed
-        return (td.velocityMs > kEpsilon) ? 500.0 / td.velocityMs : kInfinity;
+    auto timeToJunc = [this](const TrainData& td) -> double {
+        if(td.velocityMs <= kEpsilon) return kInfinity;
+        double remDist = 500.0;
+        if(auto* tk = net_.track(td.currentTrackId)) {
+            remDist = std::max(0.0, tk->lengthM - td.positionM);
+        }
+        return remDist / td.velocityMs;
     };
 
     double tA = timeToJunc(a), tB = timeToJunc(b);

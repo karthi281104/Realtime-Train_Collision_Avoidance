@@ -60,7 +60,7 @@ struct TrainData {
 
     // ── Helpers ───────────────────────────────────────────────────────────────
     double frontPositionM()  const { return positionM; }
-    double rearPositionM()   const { return positionM - spec.lengthM; }
+    double rearPositionM()   const { return std::max(0.0, positionM - spec.lengthM); }
     double speedKmh()        const { return velocityMs * kMsToKmh; }
 };
 

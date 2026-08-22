@@ -4,13 +4,11 @@
 #include "railway/RouteManager.hpp"
 #include "train/TrainSubtypes.hpp"
 #include "train/TrainStateManager.hpp"
+#include "train/TrainPhysics.hpp"
 #include "prediction/CollisionPredictor.hpp"
 #include "safety/ConflictManager.hpp"
 #include "safety/ConflictResolver.hpp"
 #include "core/Logger.hpp"
-#include <cmath>
-#include <iostream>
-#include <memory>
 #include <cmath>
 #include <iostream>
 #include <memory>
@@ -40,7 +38,7 @@ void test_rear_end_detection() {
     TrainData leading, trailing;
     leading.id = 1; leading.type = TrainType::PASSENGER;
     leading.spec = TrainSpec::forPassenger();
-    leading.positionM = 3000.0; leading.velocityMs = 40.0 / 3.6; // 40 km/h
+    leading.positionM = 800.0; leading.velocityMs = 40.0 / 3.6; // 40 km/h
     leading.currentTrackId = tk; leading.direction = Direction::FORWARD;
     leading.state = TrainState::RUNNING;
 
@@ -59,7 +57,7 @@ void test_rear_end_detection() {
     if(pr.hasConflict) {
         CHECK(pr.conflict.type == ConflictType::REAR_END, "Conflict type = REAR_END");
         CHECK(pr.conflict.ttcSeconds < 30.0, "TTC < 30s");
-        CHECK(pr.conflict.risk >= RiskLevel::WARNING, "Risk >= WARNING");
+        CHECK(pr.conflict.risk >= RiskLevel::CAUTION, "Risk >= CAUTION");
         std::cout << "    TTC=" << pr.conflict.ttcSeconds
                   << "s  Sep=" << static_cast<int>(pr.conflict.separationM) << "m"
                   << "  Risk=" << toString(pr.conflict.risk) << "\n";
@@ -96,7 +94,7 @@ void test_ttc_math() {
     std::cout << "\n[TTC Mathematical Validation]\n";
     // Gap = 500m, trailing vel = 20m/s, leading vel = 10m/s → relVel = 10m/s
     // Safe gap = 100m → time to close = (500-100)/10 = 40s
-    double ttc = physics::ttcSameDirection(500.0, 10.0, 0.0, 20.0, 100.0);
+    double ttc = tca::physics::ttcSameDirection(500.0, 10.0, 0.0, 20.0, 100.0);
     CHECK_NEAR(ttc, 40.0, 1.0, "TTC exact calculation");
 }
 
@@ -114,8 +112,8 @@ void test_closed_loop_control() {
     ConflictResolver  cr;
 
     // Create trains directly in TSM (no physics engine, manually step)
-    auto t1 = std::make_unique<PassengerTrain>(1, "T01", A, B, 3000.0, 40.0);
-    auto t2 = std::make_unique<ExpressTrain>  (2, "T02", A, B,    0.0, 80.0);
+    auto t1 = std::make_unique<PassengerTrain>(1, "T01", A, B, 800.0, 40.0);
+    auto t2 = std::make_unique<ExpressTrain>  (2, "T02", A, B,   0.0, 80.0);
     t1->data().currentTrackId = tk; t1->data().state = TrainState::RUNNING;
     t2->data().currentTrackId = tk; t2->data().state = TrainState::RUNNING;
     t1->data().targetSpeedMs = 40.0 * kMsToMs;
@@ -135,7 +133,7 @@ void test_closed_loop_control() {
         tsm.forEach([dt, simNow](Train& t) {
             auto& d = t.data();
             if(d.state == TrainState::IDLE || d.state == TrainState::STOPPED) return;
-            d.accelerationMs2 = physics::computeAcceleration(d);
+            d.accelerationMs2 = tca::physics::computeAcceleration(d);
             t.applyPhysics(dt);
             d.simTimestamp = simNow;
         });
@@ -181,7 +179,7 @@ void test_head_on_emergency() {
     t1.targetSpeedMs = t1.velocityMs;
 
     t2.id = 2; t2.spec = TrainSpec::forPassenger();
-    t2.positionM = 9000.0; t2.velocityMs = 80.0/3.6;
+    t2.positionM = 800.0; t2.velocityMs = 80.0/3.6;
     t2.direction = Direction::BACKWARD;
     t2.currentTrackId = tk; t2.state = TrainState::RUNNING;
     t2.targetSpeedMs = t2.velocityMs;

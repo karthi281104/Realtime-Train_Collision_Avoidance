@@ -23,7 +23,7 @@ void Logger::init(const std::string& logDir, LogLevel minLevel) {
 }
 
 void Logger::log(LogLevel level, std::string_view msg) {
-    if(level < minLevel_) return;
+    if(level < minLevel_.load(std::memory_order_relaxed)) return;
     auto now   = std::chrono::system_clock::now();
     auto tt    = std::chrono::system_clock::to_time_t(now);
     auto ms    = std::chrono::duration_cast<std::chrono::milliseconds>(

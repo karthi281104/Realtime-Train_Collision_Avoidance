@@ -104,7 +104,7 @@ void Dashboard::printTrains() {
 
 void Dashboard::printConflicts() {
     using namespace ansi;
-    auto& conflicts = cm_.activeConflicts();
+    auto conflicts = cm_.activeConflicts();
     std::cout << "\n" << BOLD << "  ACTIVE CONFLICTS (" << conflicts.size() << ")\n" << RESET;
     if(conflicts.empty()) {
         std::cout << GREEN << "  ✓ No conflicts detected.\n" << RESET;

@@ -14,10 +14,26 @@ ConflictResolver::resolve(const std::vector<ConflictInfo>& conflicts,
                           double simNow) {
     std::vector<Resolution> resolutions;
     for(auto& ci : conflicts) {
-        auto res = resolveOne(ci, tsm, net, simNow);
-        if(res.action != ConflictAction::NONE) {
-            applyResolution(res, tsm);
-            resolutions.push_back(res);
+        if(ci.type == ConflictType::HEAD_ON) {
+            // Both trains in head-on must apply emergency braking
+            for(TrainId tid : {ci.trainA, ci.trainB}) {
+                Train* t = tsm.get(tid);
+                if(t) {
+                    Resolution res;
+                    res.conflictId = ci.id;
+                    res.targetTrain = tid;
+                    res.action = ConflictAction::EMERGENCY_BRAKING;
+                    res.newTargetSpeedMs = 0.0;
+                    applyResolution(res, tsm);
+                    resolutions.push_back(res);
+                }
+            }
+        } else {
+            auto res = resolveOne(ci, tsm, net, simNow);
+            if(res.action != ConflictAction::NONE) {
+                applyResolution(res, tsm);
+                resolutions.push_back(res);
+            }
         }
     }
     return resolutions;
@@ -30,7 +46,6 @@ Resolution ConflictResolver::resolveOne(const ConflictInfo& ci,
     // Always act on the trailing / higher-risk train
     TrainId targetId = ci.trainA;  // default: first train
 
-    // For rear-end: act on trailing train
     Train* tA = tsm.get(ci.trainA);
     Train* tB = tsm.get(ci.trainB);
     if(!tA || !tB) return {};
@@ -39,9 +54,6 @@ Resolution ConflictResolver::resolveOne(const ConflictInfo& ci,
     if(ci.type == ConflictType::REAR_END) {
         targetId = (tA->data().positionM < tB->data().positionM)
                    ? ci.trainA : ci.trainB;
-    } else if(ci.type == ConflictType::HEAD_ON) {
-        // Both need emergency braking — act on both; return one for now
-        targetId = ci.trainA;
     }
 
     Train* target = tsm.get(targetId);
@@ -112,7 +124,7 @@ bool ConflictResolver::simulateResolution(const ConflictInfo& ci,
         physics::integrate(posO, velO, accelO, kDefaultDt);
         velM = std::max(0.0, velM);
         velO = std::max(0.0, velO);
-        double sep = posO - posM;
+        double sep = std::abs(posO - posM);
         if(sep < reqSep * 0.5) return false;
     }
     return true;

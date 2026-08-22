@@ -53,10 +53,17 @@ TrainSpec TrainSpec::forFreight() {
 // ─── Train base ───────────────────────────────────────────────────────────────
 
 void Train::applyPhysics(double dt) {
-    physics::integrate(data_.positionM, data_.velocityMs,
-                       data_.accelerationMs2, dt);
+    if(data_.direction == Direction::BACKWARD) {
+        double dist = data_.velocityMs * dt + 0.5 * data_.accelerationMs2 * dt * dt;
+        data_.positionM -= dist;
+        data_.velocityMs += data_.accelerationMs2 * dt;
+    } else {
+        physics::integrate(data_.positionM, data_.velocityMs,
+                           data_.accelerationMs2, dt);
+    }
     if(data_.velocityMs <= 0.0) {
         data_.velocityMs = 0.0;
+        data_.emergencyBrakeActive = false;
         if(data_.state == TrainState::BRAKING ||
            data_.state == TrainState::EMERGENCY_BRAKING)
             data_.state = TrainState::STOPPED;

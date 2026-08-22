@@ -31,6 +31,11 @@ public:
     Route*       routeForTrain(TrainId tid);
 
     void removeRoute(RouteId id);
+    void clear() {
+        nextId_ = 1;
+        routes_.clear();
+        trainRoute_.clear();
+    }
     void print()     const;
 
 private:

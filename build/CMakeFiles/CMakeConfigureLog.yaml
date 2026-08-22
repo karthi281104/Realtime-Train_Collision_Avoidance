@@ -1,0 +1,1531 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\karth\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\TDM-GCC-64\\bin"
+        - "CSTD_LICENSE_FILE=27000@localhost"
+        - "C:\\Program Files\\Tesseract-OCR"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Users\\karth\\.cargo\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\xampp\\php\\php.exe"
+        - "C:\\Users\\karth\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\geos_c.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\gdal.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\data\\proj"
+        - "C:\\Users\\karth\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Ollama"
+        - "D:\\antigravity\\Antigravity\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.12.12+1cce77968 for .NET Framework
+      Build started 22-08-2026 4.48.00 PM.
+      
+      Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\4.4.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\4.4.2\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\4.4.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.01
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/4.4.2/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:102 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/TDM-GCC-64/bin/"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/"
+      - "C:/Program Files/Tesseract-OCR/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git LFS/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/karth/.cargo/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/"
+      - "C:/flutter/bin/"
+      - "C:/xampp/php/php.exe/"
+      - "C:/Users/karth/AppData/Roaming/npm/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/"
+      - "D:/antigravity/Antigravity/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\karth\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\TDM-GCC-64\\bin"
+        - "CSTD_LICENSE_FILE=27000@localhost"
+        - "C:\\Program Files\\Tesseract-OCR"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Users\\karth\\.cargo\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\xampp\\php\\php.exe"
+        - "C:\\Users\\karth\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\geos_c.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\gdal.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\data\\proj"
+        - "C:\\Users\\karth\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Ollama"
+        - "D:\\antigravity\\Antigravity\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/TDM-GCC-64/bin/"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/"
+      - "C:/Program Files/Tesseract-OCR/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git LFS/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/karth/.cargo/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/"
+      - "C:/flutter/bin/"
+      - "C:/xampp/php/php.exe/"
+      - "C:/Users/karth/AppData/Roaming/npm/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/"
+      - "D:/antigravity/Antigravity/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/lld-link.com"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/lld-link.exe"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/lld-link"
+      - "C:/TDM-GCC-64/bin/lld-link.com"
+      - "C:/TDM-GCC-64/bin/lld-link.exe"
+      - "C:/TDM-GCC-64/bin/lld-link"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/lld-link.com"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/lld-link.exe"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/lld-link"
+      - "C:/Program Files/Tesseract-OCR/lld-link.com"
+      - "C:/Program Files/Tesseract-OCR/lld-link.exe"
+      - "C:/Program Files/Tesseract-OCR/lld-link"
+      - "C:/Program Files/GitHub CLI/lld-link.com"
+      - "C:/Program Files/GitHub CLI/lld-link.exe"
+      - "C:/Program Files/GitHub CLI/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Git LFS/lld-link.com"
+      - "C:/Program Files/Git LFS/lld-link.exe"
+      - "C:/Program Files/Git LFS/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/lld-link"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/lld-link"
+      - "C:/Users/karth/.cargo/bin/lld-link.com"
+      - "C:/Users/karth/.cargo/bin/lld-link.exe"
+      - "C:/Users/karth/.cargo/bin/lld-link"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/lld-link"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/lld-link"
+      - "C:/flutter/bin/lld-link.com"
+      - "C:/flutter/bin/lld-link.exe"
+      - "C:/flutter/bin/lld-link"
+      - "C:/xampp/php/php.exe/lld-link.com"
+      - "C:/xampp/php/php.exe/lld-link.exe"
+      - "C:/xampp/php/php.exe/lld-link"
+      - "C:/Users/karth/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/karth/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/karth/AppData/Roaming/npm/lld-link"
+      - "C:/Program Files/PostgreSQL/17/bin/lld-link.com"
+      - "C:/Program Files/PostgreSQL/17/bin/lld-link.exe"
+      - "C:/Program Files/PostgreSQL/17/bin/lld-link"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/lld-link.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/lld-link.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/lld-link"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/lld-link.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/lld-link.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/lld-link"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/lld-link.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/lld-link.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/lld-link"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/lld-link.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/lld-link.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/lld-link"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/lld-link"
+      - "D:/antigravity/Antigravity/bin/lld-link.com"
+      - "D:/antigravity/Antigravity/bin/lld-link.exe"
+      - "D:/antigravity/Antigravity/bin/lld-link"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/lld-link.com"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/lld-link.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\karth\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\TDM-GCC-64\\bin"
+        - "CSTD_LICENSE_FILE=27000@localhost"
+        - "C:\\Program Files\\Tesseract-OCR"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Users\\karth\\.cargo\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\xampp\\php\\php.exe"
+        - "C:\\Users\\karth\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\geos_c.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\gdal.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\data\\proj"
+        - "C:\\Users\\karth\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Ollama"
+        - "D:\\antigravity\\Antigravity\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/TDM-GCC-64/bin/"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/"
+      - "C:/Program Files/Tesseract-OCR/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git LFS/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/karth/.cargo/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/"
+      - "C:/flutter/bin/"
+      - "C:/xampp/php/php.exe/"
+      - "C:/Users/karth/AppData/Roaming/npm/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/"
+      - "D:/antigravity/Antigravity/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\karth\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\TDM-GCC-64\\bin"
+        - "CSTD_LICENSE_FILE=27000@localhost"
+        - "C:\\Program Files\\Tesseract-OCR"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Users\\karth\\.cargo\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\xampp\\php\\php.exe"
+        - "C:\\Users\\karth\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\geos_c.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\gdal.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\data\\proj"
+        - "C:\\Users\\karth\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Ollama"
+        - "D:\\antigravity\\Antigravity\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/TDM-GCC-64/bin/"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/"
+      - "C:/Program Files/Tesseract-OCR/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git LFS/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/karth/.cargo/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/"
+      - "C:/flutter/bin/"
+      - "C:/xampp/php/php.exe/"
+      - "C:/Users/karth/AppData/Roaming/npm/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/"
+      - "D:/antigravity/Antigravity/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/mt"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt"
+      - "C:/ProgramData/chocolatey/bin/mt.com"
+      - "C:/ProgramData/chocolatey/bin/mt.exe"
+      - "C:/ProgramData/chocolatey/bin/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/mt.com"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/mt.exe"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/mt"
+      - "C:/TDM-GCC-64/bin/mt.com"
+      - "C:/TDM-GCC-64/bin/mt.exe"
+      - "C:/TDM-GCC-64/bin/mt"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/mt.com"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/mt.exe"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/mt"
+      - "C:/Program Files/Tesseract-OCR/mt.com"
+      - "C:/Program Files/Tesseract-OCR/mt.exe"
+      - "C:/Program Files/Tesseract-OCR/mt"
+      - "C:/Program Files/GitHub CLI/mt.com"
+      - "C:/Program Files/GitHub CLI/mt.exe"
+      - "C:/Program Files/GitHub CLI/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/Git LFS/mt.com"
+      - "C:/Program Files/Git LFS/mt.exe"
+      - "C:/Program Files/Git LFS/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/mt.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/mt.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/mt"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/mt.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/mt.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/mt"
+      - "C:/Users/karth/.cargo/bin/mt.com"
+      - "C:/Users/karth/.cargo/bin/mt.exe"
+      - "C:/Users/karth/.cargo/bin/mt"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/mt.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/mt.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/mt"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/mt.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/mt.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/mt"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/mt.com"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/mt.exe"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/mt"
+      - "C:/flutter/bin/mt.com"
+      - "C:/flutter/bin/mt.exe"
+      - "C:/flutter/bin/mt"
+      - "C:/xampp/php/php.exe/mt.com"
+      - "C:/xampp/php/php.exe/mt.exe"
+      - "C:/xampp/php/php.exe/mt"
+      - "C:/Users/karth/AppData/Roaming/npm/mt.com"
+      - "C:/Users/karth/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/karth/AppData/Roaming/npm/mt"
+      - "C:/Program Files/PostgreSQL/17/bin/mt.com"
+      - "C:/Program Files/PostgreSQL/17/bin/mt.exe"
+      - "C:/Program Files/PostgreSQL/17/bin/mt"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/mt.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/mt.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/mt"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/mt.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/mt.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/mt"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/mt.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/mt.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/mt"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/mt.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/mt.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/mt"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/mt.com"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/mt.exe"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/mt"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/mt.com"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/mt.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/mt"
+      - "D:/antigravity/Antigravity/bin/mt.com"
+      - "D:/antigravity/Antigravity/bin/mt.exe"
+      - "D:/antigravity/Antigravity/bin/mt"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/mt.com"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/mt.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\karth\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\TDM-GCC-64\\bin"
+        - "CSTD_LICENSE_FILE=27000@localhost"
+        - "C:\\Program Files\\Tesseract-OCR"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Users\\karth\\.cargo\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\xampp\\php\\php.exe"
+        - "C:\\Users\\karth\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\geos_c.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\gdal.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\data\\proj"
+        - "C:\\Users\\karth\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Ollama"
+        - "D:\\antigravity\\Antigravity\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/TDM-GCC-64/bin/"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/"
+      - "C:/Program Files/Tesseract-OCR/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git LFS/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/karth/.cargo/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/"
+      - "C:/flutter/bin/"
+      - "C:/xampp/php/php.exe/"
+      - "C:/Users/karth/AppData/Roaming/npm/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/"
+      - "D:/antigravity/Antigravity/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\karth\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\TDM-GCC-64\\bin"
+        - "CSTD_LICENSE_FILE=27000@localhost"
+        - "C:\\Program Files\\Tesseract-OCR"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Users\\karth\\.cargo\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\xampp\\php\\php.exe"
+        - "C:\\Users\\karth\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\geos_c.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\gdal.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\data\\proj"
+        - "C:\\Users\\karth\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Ollama"
+        - "D:\\antigravity\\Antigravity\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/"
+      - "C:/TDM-GCC-64/bin/"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/"
+      - "C:/Program Files/Tesseract-OCR/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Git LFS/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/"
+      - "C:/Users/karth/.cargo/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/"
+      - "C:/flutter/bin/"
+      - "C:/xampp/php/php.exe/"
+      - "C:/Users/karth/AppData/Roaming/npm/"
+      - "C:/Program Files/PostgreSQL/17/bin/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/"
+      - "D:/antigravity/Antigravity/bin/"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/bin/"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/sbin/"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/"
+    searched_directories:
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc"
+      - "C:/ProgramData/chocolatey/bin/rc.com"
+      - "C:/ProgramData/chocolatey/bin/rc.exe"
+      - "C:/ProgramData/chocolatey/bin/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/rc.com"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/rc.exe"
+      - "C:/Users/karth/AppData/Roaming/Python/Python312/Scripts/rc"
+      - "C:/TDM-GCC-64/bin/rc.com"
+      - "C:/TDM-GCC-64/bin/rc.exe"
+      - "C:/TDM-GCC-64/bin/rc"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/rc.com"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/rc.exe"
+      - "D:/CPP-POC/Realtime-Train_Collision_Avoidance/CSTD_LICENSE_FILE=27000@localhost/rc"
+      - "C:/Program Files/Tesseract-OCR/rc.com"
+      - "C:/Program Files/Tesseract-OCR/rc.exe"
+      - "C:/Program Files/Tesseract-OCR/rc"
+      - "C:/Program Files/GitHub CLI/rc.com"
+      - "C:/Program Files/GitHub CLI/rc.exe"
+      - "C:/Program Files/GitHub CLI/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/Git LFS/rc.com"
+      - "C:/Program Files/Git LFS/rc.exe"
+      - "C:/Program Files/Git LFS/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/rc.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/rc.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/Scripts/rc"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/rc.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/rc.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python310/rc"
+      - "C:/Users/karth/.cargo/bin/rc.com"
+      - "C:/Users/karth/.cargo/bin/rc.exe"
+      - "C:/Users/karth/.cargo/bin/rc"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/rc.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/rc.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/Scripts/rc"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/rc.com"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/rc.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Python/Python311/rc"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/karth/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/rc.com"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/rc.exe"
+      - "C:/Program Files/JetBrains/PyCharm 2024.1.4/bin/rc"
+      - "C:/flutter/bin/rc.com"
+      - "C:/flutter/bin/rc.exe"
+      - "C:/flutter/bin/rc"
+      - "C:/xampp/php/php.exe/rc.com"
+      - "C:/xampp/php/php.exe/rc.exe"
+      - "C:/xampp/php/php.exe/rc"
+      - "C:/Users/karth/AppData/Roaming/npm/rc.com"
+      - "C:/Users/karth/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/karth/AppData/Roaming/npm/rc"
+      - "C:/Program Files/PostgreSQL/17/bin/rc.com"
+      - "C:/Program Files/PostgreSQL/17/bin/rc.exe"
+      - "C:/Program Files/PostgreSQL/17/bin/rc"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/rc.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/rc.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/rc"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/rc.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/rc.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/geos_c.dll/rc"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/rc.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/rc.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/gdal.dll/rc"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/rc.com"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/rc.exe"
+      - "D:/python/intepretor/Lib/site-packages/osgeo/data/proj/rc"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/rc.com"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/rc.exe"
+      - "C:/Users/karth/AppData/Local/GitHubDesktop/bin/rc"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/rc.com"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/rc.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Ollama/rc"
+      - "D:/antigravity/Antigravity/bin/rc.com"
+      - "D:/antigravity/Antigravity/bin/rc.exe"
+      - "D:/antigravity/Antigravity/bin/rc"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/rc.com"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/rc.exe"
+      - "C:/Users/karth/AppData/Local/Programs/Antigravity IDE/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/bin/rc.com"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/bin/rc.exe"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/bin/rc"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/sbin/rc.com"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/sbin/rc.exe"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/sbin/rc"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/rc.com"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/rc.exe"
+      - "C:/Program Files (x86)/TrainCollisionAvoidance/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\karth\\AppData\\Roaming\\Python\\Python312\\Scripts"
+        - "C:\\TDM-GCC-64\\bin"
+        - "C:\\TDM-GCC-64\\bin"
+        - "CSTD_LICENSE_FILE=27000@localhost"
+        - "C:\\Program Files\\Tesseract-OCR"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python310\\"
+        - "C:\\Users\\karth\\.cargo\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\karth\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2024.1.4\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\xampp\\php\\php.exe"
+        - "C:\\Users\\karth\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\PostgreSQL\\17\\bin"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\geos_c.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\gdal.dll"
+        - "D:\\python\\intepretor\\Lib\\site-packages\\osgeo\\data\\proj"
+        - "C:\\Users\\karth\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Ollama"
+        - "D:\\antigravity\\Antigravity\\bin"
+        - "C:\\Users\\karth\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/TrainCollisionAvoidance"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/TrainCollisionAvoidance"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-i8yyqe"
+      binary: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-i8yyqe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-i8yyqe'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1a791.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 22-08-2026 4.48.02 PM.
+        
+        Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8yyqe\\cmTC_1a791.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8yyqe\\Debug\\".
+          Creating directory "cmTC_1a791.dir\\Debug\\cmTC_1a791.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1a791.dir\\Debug\\cmTC_1a791.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1a791.dir\\Debug\\cmTC_1a791.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_1a791.dir\\Debug\\\\" /Fd"cmTC_1a791.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_1a791.dir\\Debug\\\\" /Fd"cmTC_1a791.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8yyqe\\Debug\\cmTC_1a791.exe" /INCREMENTAL /ILK:"cmTC_1a791.dir\\Debug\\cmTC_1a791.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-i8yyqe/Debug/cmTC_1a791.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-i8yyqe/Debug/cmTC_1a791.lib" /MACHINE:X64  /machine:x64 cmTC_1a791.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1a791.vcxproj -> D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8yyqe\\Debug\\cmTC_1a791.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_1a791.dir\\Debug\\cmTC_1a791.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1a791.dir\\Debug\\cmTC_1a791.tlog\\cmTC_1a791.lastbuildstate".
+        Done Building Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8yyqe\\cmTC_1a791.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        link line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8yyqe\\Debug\\cmTC_1a791.exe" /INCREMENTAL /ILK:"cmTC_1a791.dir\\Debug\\cmTC_1a791.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-i8yyqe/Debug/cmTC_1a791.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-i8yyqe/Debug/cmTC_1a791.lib" /MACHINE:X64  /machine:x64 cmTC_1a791.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/HostX64/x64/link.exe 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.42.34435.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "CMakeLists.txt:27 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-tnx05f"
+      binary: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-tnx05f"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-tnx05f'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3266a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 22-08-2026 4.48.03 PM.
+        
+        Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\cmTC_3266a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\Debug\\".
+          Creating directory "cmTC_3266a.dir\\Debug\\cmTC_3266a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3266a.dir\\Debug\\cmTC_3266a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3266a.dir\\Debug\\cmTC_3266a.tlog\\unsuccessfulbuild".
+        ComputeStdModulesCompileInputs:
+          Reading library manifest file 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\modules.json' which provides data for library 'microsoft/STL'.
+          Adding module source 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
+          Adding module source 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
+        MakeDirsForCl:
+          Creating directory "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\cmTC_3266a.dir\\Debug\\microsoft\\STL".
+        SetModuleDependencies:
+          Creating directory "cmTC_3266a.dir\\Debug\\cmTC_3266a_MD.tlog\\".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++latest /Fo"cmTC_3266a.dir\\Debug\\\\" /Fd"cmTC_3266a.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          /std:c++latest is provided as a preview of language features from the latest C++
+          working draft, and we're eager to hear about bugs and suggestions for improvements.
+          However, note that these features are provided as-is without support, and subject
+          to changes or removal as the working draft evolves. See
+          https://go.microsoft.com/fwlink/?linkid=2045807 for details.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++latest /Fo"cmTC_3266a.dir\\Debug\\\\" /Fd"cmTC_3266a.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\src.cxx"
+          src.cxx
+        D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\cmTC_3266a.vcxproj]
+        Done Building Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\cmTC_3266a.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\cmTC_3266a.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnx05f\\cmTC_3266a.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.47
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckLibraryExists.cmake:142 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:238 (_threads_check_lib)"
+      - "CMakeLists.txt:27 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-m4ot6t"
+      binary: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-m4ot6t"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-m4ot6t'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_73152.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 22-08-2026 4.48.04 PM.
+        
+        Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\cmTC_73152.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\Debug\\".
+          Creating directory "cmTC_73152.dir\\Debug\\cmTC_73152.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_73152.dir\\Debug\\cmTC_73152.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_73152.dir\\Debug\\cmTC_73152.tlog\\unsuccessfulbuild".
+        ComputeStdModulesCompileInputs:
+          Reading library manifest file 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\modules.json' which provides data for library 'microsoft/STL'.
+          Adding module source 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
+          Adding module source 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
+        MakeDirsForCl:
+          Creating directory "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\cmTC_73152.dir\\Debug\\microsoft\\STL".
+        SetModuleDependencies:
+          Creating directory "cmTC_73152.dir\\Debug\\cmTC_73152_MD.tlog\\".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++latest /Fo"cmTC_73152.dir\\Debug\\\\" /Fd"cmTC_73152.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          /std:c++latest is provided as a preview of language features from the latest C++
+          working draft, and we're eager to hear about bugs and suggestions for improvements.
+          However, note that these features are provided as-is without support, and subject
+          to changes or removal as the working draft evolves. See
+          https://go.microsoft.com/fwlink/?linkid=2045807 for details.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++latest /Fo"cmTC_73152.dir\\Debug\\\\" /Fd"cmTC_73152.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\Debug\\cmTC_73152.exe" /INCREMENTAL /ILK:"cmTC_73152.dir\\Debug\\cmTC_73152.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-m4ot6t/Debug/cmTC_73152.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-m4ot6t/Debug/cmTC_73152.lib" /MACHINE:X64  /machine:x64 cmTC_73152.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\cmTC_73152.vcxproj]
+        Done Building Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\cmTC_73152.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\cmTC_73152.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m4ot6t\\cmTC_73152.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.46
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckLibraryExists.cmake:142 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:239 (_threads_check_lib)"
+      - "CMakeLists.txt:27 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-1kalyu"
+      binary: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-1kalyu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-1kalyu'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c9eae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.12.12+1cce77968 for .NET Framework
+        Build started 22-08-2026 4.48.05 PM.
+        
+        Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\cmTC_c9eae.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\Debug\\".
+          Creating directory "cmTC_c9eae.dir\\Debug\\cmTC_c9eae.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c9eae.dir\\Debug\\cmTC_c9eae.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c9eae.dir\\Debug\\cmTC_c9eae.tlog\\unsuccessfulbuild".
+        ComputeStdModulesCompileInputs:
+          Reading library manifest file 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\modules.json' which provides data for library 'microsoft/STL'.
+          Adding module source 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
+          Adding module source 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
+        MakeDirsForCl:
+          Creating directory "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\cmTC_c9eae.dir\\Debug\\microsoft\\STL".
+        SetModuleDependencies:
+          Creating directory "cmTC_c9eae.dir\\Debug\\cmTC_c9eae_MD.tlog\\".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++latest /Fo"cmTC_c9eae.dir\\Debug\\\\" /Fd"cmTC_c9eae.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          /std:c++latest is provided as a preview of language features from the latest C++
+          working draft, and we're eager to hear about bugs and suggestions for improvements.
+          However, note that these features are provided as-is without support, and subject
+          to changes or removal as the working draft evolves. See
+          https://go.microsoft.com/fwlink/?linkid=2045807 for details.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++latest /Fo"cmTC_c9eae.dir\\Debug\\\\" /Fd"cmTC_c9eae.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\Debug\\cmTC_c9eae.exe" /INCREMENTAL /ILK:"cmTC_c9eae.dir\\Debug\\cmTC_c9eae.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-1kalyu/Debug/cmTC_c9eae.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/CMakeFiles/CMakeScratch/TryCompile-1kalyu/Debug/cmTC_c9eae.lib" /MACHINE:X64  /machine:x64 cmTC_c9eae.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\cmTC_c9eae.vcxproj]
+        Done Building Project "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\cmTC_c9eae.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\cmTC_c9eae.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\CPP-POC\\Realtime-Train_Collision_Avoidance\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1kalyu\\cmTC_c9eae.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.45
+        
+      exitCode: 1
+...

@@ -22,7 +22,8 @@ using ConflictId = std::uint64_t;
 using RouteId    = std::uint32_t;
 
 // ─── Physical constants ───────────────────────────────────────────────────────
-constexpr double kMsToMs        = 1.0 / 3.6;   // km/h → m/s
+constexpr double kKmhToMs       = 1.0 / 3.6;   // km/h → m/s
+constexpr double kMsToMs        = kKmhToMs;    // alias for compatibility
 constexpr double kMsToKmh       = 3.6;          // m/s → km/h
 constexpr double kGravity       = 9.81;         // m/s²
 constexpr double kInfinity      = 1e18;

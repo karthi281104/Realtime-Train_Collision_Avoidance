@@ -18,6 +18,7 @@ int main(int argc, char* argv[]) {
     std::string scenario  = "rear_end";
     std::string config    = "config/system.cfg";
     double      duration  = 30.0;
+    std::size_t trainCount = 0;
     bool        realtime  = false;
 
     for(int i = 1; i < argc; ++i) {
@@ -35,14 +36,16 @@ int main(int argc, char* argv[]) {
                 "                                  multi_conflict, emergency, high_density\n"
                 "  --config    <path>   Config file path (default: config/system.cfg)\n"
                 "  --duration  <secs>   Simulation duration in seconds (default: 30)\n"
+                "  --trains    <count>  Train count for high_density (default: 10)\n"
                 "  --realtime           Run with real-time multithreaded dashboard\n"
                 "  --help               Show this help\n";
             return 0;
         }
+        if(arg == "--trains"   && i+1 < argc) trainCount = std::stoull(argv[++i]);
     }
 
     tca::ControlCenter cc;
-    if(!cc.init(config, scenario)) {
+    if(!cc.init(config, scenario, trainCount)) {
         std::cerr << "Initialization failed.\n";
         return 1;
     }
@@ -50,7 +53,7 @@ int main(int argc, char* argv[]) {
     if(realtime) {
         cc.run();
     } else {
-        cc.runScenario(scenario, duration);
+        cc.runScenario(scenario, duration, trainCount);
     }
 
     return 0;

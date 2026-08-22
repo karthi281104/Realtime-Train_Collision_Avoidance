@@ -63,9 +63,28 @@ cmake --build build -j$(nproc)
 # Real-time multithreaded dashboard
 ./build/bin/train_sim --scenario rear_end --realtime
 
+# More trains on the shared high-density corridor
+./build/bin/train_sim --scenario high_density --trains 25 --realtime
+
 # All options
 ./build/bin/train_sim --help
 ```
+
+### Browser visualization
+
+The terminal dashboard and browser view can run at the same time. Start the simulator in one terminal:
+
+```bash
+./build/bin/train_sim --scenario high_density --trains 25 --realtime
+```
+
+In a second terminal from the project root, serve the telemetry page:
+
+```bash
+python3 -m http.server 8080
+```
+
+Open <http://localhost:8080/web/>. The page reads `logs/train_state.csv` and `logs/conflicts.csv` produced by the same simulation, so it does not create a second engine or simulation state. On Windows, use `py -m http.server 8080` if `python3` is unavailable.
 
 ### Available Scenarios
 

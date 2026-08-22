@@ -20,14 +20,20 @@ void MovementEngine::updateTrain(Train& t) {
     auto& d = t.data();
     if(d.state == TrainState::IDLE || d.state == TrainState::STOPPED) return;
 
-    // 1. Compute acceleration toward target
-    d.accelerationMs2 = physics::computeAcceleration(d);
-
-    // 2. Enforce track speed limit
+    // 1. Enforce track speed limit & target speed prior to computing acceleration
     enforceSpeedLimit(t);
+    enforceTargetSpeed(t);
+
+    // 2. Compute acceleration toward target
+    d.accelerationMs2 = physics::computeAcceleration(d);
 
     // 3. Euler integration
     t.applyPhysics(clk_.dt());
+
+    // Clear emergency brake flag if train reached full stop
+    if(d.velocityMs <= 0.0) {
+        d.emergencyBrakeActive = false;
+    }
 
     // 4. Timestamp
     d.simTimestamp = clk_.simTime();
@@ -45,6 +51,13 @@ void MovementEngine::enforceSpeedLimit(Train& t) {
             // Force braking to limit
             d.accelerationMs2 = -d.spec.normalBrakeMs2;
         }
+    }
+}
+
+void MovementEngine::enforceTargetSpeed(Train& t) {
+    auto& d = t.data();
+    if(d.targetSpeedMs > d.spec.maxSpeedMs) {
+        d.targetSpeedMs = d.spec.maxSpeedMs;
     }
 }
 

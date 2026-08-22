@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\bin\Debug\test_physics.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\bin\Debug\test_prediction.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\bin\Debug\test_railway.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\bin\Debug\train_sim.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\CPP-POC\Realtime-Train_Collision_Avoidance\build\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,161 @@
+Start testing: Aug 22 16:50 India Standard Time
+----------------------------------------------------------
+1/3 Testing: Physics
+1/3 Test: Physics
+Command: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/bin/Debug/test_physics.exe"
+Directory: D:/CPP-POC/Realtime-Train_Collision_Avoidance/build
+"Physics" start time: Aug 22 16:50 India Standard Time
+Output:
+----------------------------------------------------------
+════════════════════════════════════════
+  PHYSICS UNIT TESTS
+════════════════════════════════════════
+
+[Euler Integration]
+  PASS: pos after 1 tick [got=0.5025 expected≈0.5025 tol=1e-06]
+  PASS: vel after 1 tick [got=10.1 expected≈10.1 tol=1e-06]
+
+[Negative Speed Clamp]
+  PASS: velocity cannot go negative
+
+[Braking Distance]
+  PASS: braking distance at 20m/s [got=230 expected≈230 tol=1]
+  PASS: braking dist at v=0 [got=0 expected≈0 tol=1e-09]
+
+[TTC Same Direction]
+  PASS: TTC rear-end (expected 40s) [got=40 expected≈40 tol=0.5]
+  PASS: TTC infinite when diverging
+
+[TTC Head-On]
+  PASS: TTC head-on (expected 50s) [got=50 expected≈50 tol=0.5]
+
+[Required Separation]
+  PASS: required separation > train length
+  PASS: required separation < 5km (sanity)
+    Required separation at 160km/h: 1194m
+
+[Multi-tick Convergence]
+  PASS: time to stop from 80km/h [got=20.2 expected≈20.2 tol=1.5]
+    Stopped in 20s, pos=224m
+
+════════════════════════════════════════
+  Results: 11 PASSED, 0 FAILED
+════════════════════════════════════════
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"Physics" end time: Aug 22 16:50 India Standard Time
+"Physics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: Railway
+2/3 Test: Railway
+Command: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/bin/Debug/test_railway.exe"
+Directory: D:/CPP-POC/Realtime-Train_Collision_Avoidance/build
+"Railway" start time: Aug 22 16:50 India Standard Time
+Output:
+----------------------------------------------------------
+════════════════════════════════════════
+  RAILWAY NETWORK UNIT TESTS
+════════════════════════════════════════
+
+[Basic Graph Construction]
+  PASS: station A exists
+  PASS: track A-B exists
+  PASS: track A-B length = 1000m
+  PASS: track B-C has speed limit
+  PASS: B has 2 neighbours (bidirectional)
+
+[BFS]
+  PASS: BFS finds path A→D
+  PASS: BFS path starts at A, ends at D
+
+[Dijkstra Shortest Path]
+  PASS: Dijkstra finds path A→D
+  PASS: Dijkstra picks A→C→D (3 nodes)
+  PASS: Dijkstra via C
+
+[Unreachable Node]
+  PASS: No path A→C (C isolated)
+
+[Disabled Track]
+  PASS: Path exists after disabling A-B
+  PASS: Dijkstra uses direct A-C when A-B disabled
+
+[Occupancy]
+  PASS: Track occupied by 2 trains
+  PASS: Track still occupied (1 train)
+  PASS: Track free after both leave
+
+[Route Manager]
+  PASS: Route assigned
+  PASS: Route retrievable
+  PASS: Route A→B→C has 2 track segments
+  PASS: Route not complete at start
+
+════════════════════════════════════════
+  Results: 20 PASSED, 0 FAILED
+════════════════════════════════════════
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"Railway" end time: Aug 22 16:50 India Standard Time
+"Railway" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: Prediction
+3/3 Test: Prediction
+Command: "D:/CPP-POC/Realtime-Train_Collision_Avoidance/build/bin/Debug/test_prediction.exe"
+Directory: D:/CPP-POC/Realtime-Train_Collision_Avoidance/build
+"Prediction" start time: Aug 22 16:50 India Standard Time
+Output:
+----------------------------------------------------------
+════════════════════════════════════════
+  PREDICTION & SAFETY INTEGRATION TESTS
+════════════════════════════════════════
+
+[Rear-End Detection]
+  PASS: Rear-end conflict detected at 500m separation, 40m/s relative
+  PASS: Conflict type = REAR_END
+  PASS: TTC < 30s
+  PASS: Risk >= CAUTION
+    TTC=27.306s  Sep=800m  Risk=CAUTION
+
+[No Conflict When Safe]
+  PASS: No conflict when 20km apart at same speed
+
+[TTC Mathematical Validation]
+  PASS: TTC exact calculation [got=40 exp≈40]
+
+[Closed-Loop Control: Speed Reduction Resolves Rear-End]
+16:50:27.536 [WRN] CONFLICT#1 [REAR_END] T1 <-> T2 TTC=27s Sep=799m Risk=CAUTION
+16:50:27.542 [WRN] CONFLICT#2 [REAR_END] T1 <-> T2 TTC=29s Sep=723m Risk=CAUTION
+16:50:27.546 [WRN] CONFLICT#3 [REAR_END] T1 <-> T2 TTC=29s Sep=632m Risk=CAUTION
+16:50:27.550 [WRN] CONFLICT#4 [REAR_END] T1 <-> T2 TTC=29s Sep=552m Risk=CAUTION
+16:50:27.555 [WRN] CONFLICT#5 [REAR_END] T1 <-> T2 TTC=29s Sep=483m Risk=CAUTION
+16:50:27.563 [WRN] CONFLICT#6 [REAR_END] T1 <-> T2 TTC=29s Sep=422m Risk=CAUTION
+    Resolved at t=85s  T02=45km/h
+  PASS: Conflict was detected during simulation
+  PASS: Conflict resolved (T02 speed reduced)
+
+[Head-On Emergency Braking]
+  PASS: Head-on conflict detected
+  PASS: Type = HEAD_ON
+  PASS: Risk >= CRITICAL
+  PASS: Recommended action = EMERGENCY_BRAKING
+    TTC=18s  Action=EMRG_BRAKE
+
+════════════════════════════════════════
+  Results: 12 PASSED, 0 FAILED
+════════════════════════════════════════
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"Prediction" end time: Aug 22 16:50 India Standard Time
+"Prediction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 22 16:50 India Standard Time

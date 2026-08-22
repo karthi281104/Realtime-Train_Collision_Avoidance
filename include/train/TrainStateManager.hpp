@@ -16,6 +16,10 @@ public:
     // ── Lifetime ─────────────────────────────────────────────────────────────
     void addTrain(std::unique_ptr<Train> t);
     void removeTrain(TrainId id);
+    void clear() {
+        std::lock_guard lk(mtx_);
+        trains_.clear();
+    }
 
     // ── Raw access (call under lock) ──────────────────────────────────────────
     Train*       get(TrainId id);

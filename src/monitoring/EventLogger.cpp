@@ -14,7 +14,11 @@ void EventLogger::init(const std::string& logDir) {
     logDir_      = logDir;
     initialized_ = true;
 
-    // Write CSV headers
+    for(const auto& filename : {"train_state.csv", "conflicts.csv",
+                                "control_actions.csv", "system.log"}) {
+        std::ofstream(logDir_ + "/" + filename, std::ios::trunc).close();
+    }
+
     write("train_state.csv",
           "sim_time,train_id,name,type,position_m,velocity_kmh,accel_ms2,state,track,sensor");
     write("conflicts.csv",

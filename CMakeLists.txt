@@ -13,6 +13,8 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU")
         -Wshadow -Wconversion -Wsign-conversion
         -march=native -O2
     )
+elseif(MSVC)
+    add_compile_options(/FS)
 endif()
 
 # ─── Output directories ───────────────────────────────────────────────────────

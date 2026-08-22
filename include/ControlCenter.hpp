@@ -6,6 +6,7 @@
 #include "monitoring/EventLogger.hpp"
 #include "monitoring/ScenarioManager.hpp"
 #include "core/Config.hpp"
+#include <cstddef>
 #include <memory>
 
 namespace tca {
@@ -16,13 +17,14 @@ public:
     ControlCenter();
     ~ControlCenter();
 
-    bool init(const std::string& configPath, const std::string& scenario);
+    bool init(const std::string& configPath, const std::string& scenario,
+              std::size_t trainCount = 0);
 
     void run();
     void stop();
 
     // For testing: run a specific scenario synchronously for N seconds.
-    void runScenario(const std::string& name, double seconds);
+    void runScenario(const std::string& name, double seconds, std::size_t trainCount = 0);
 
 private:
     Config            cfg_;

@@ -1,0 +1,7 @@
+=== Train Collision Avoidance System Log ===
+16:50:29.694 [INF] === Train Collision Avoidance System Starting ===
+16:50:29.695 [INF] Config loaded from config/system.cfg
+16:50:29.697 [INF] Loading scenario: head_on
+16:50:29.697 [INF] Scenario: resetting network, trains, and routes...
+16:50:29.698 [INF] Scenario: head_on | Two trains approaching head-on at 80km/h each. System must trigger emergency braking.
+16:50:29.698 [INF] System initialized successfully.

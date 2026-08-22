@@ -67,6 +67,17 @@ public:
     void disableTrack(TrackId id);
     void enableTrack (TrackId id);
 
+    void clear() {
+        nextNodeId_ = 1;
+        nextTrackId_ = 1;
+        nextSignalId_ = 1;
+        nodes_.clear();
+        tracks_.clear();
+        stations_.clear();
+        junctions_.clear();
+        signals_.clear();
+    }
+
     void print() const;
 
 private:

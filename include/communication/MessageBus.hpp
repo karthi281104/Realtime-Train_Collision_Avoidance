@@ -11,7 +11,7 @@ public:
     void registerTrain(TrainId id, double delayMs = 100.0,
                        double jitterMs = 30.0, double lossRate = 0.02);
 
-    void broadcast(const TrainData& state, double simNow);
+    void broadcast(const TrainData& state, double simNow, double wallNow = 0.0);
 
     /// Apply arrived messages to TrainStateManager.
     void processIncoming(TrainStateManager& tsm, double wallNow);

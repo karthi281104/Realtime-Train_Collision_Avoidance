@@ -13,4 +13,6 @@ struct Signal {
     void setAspect(SignalAspect a) { if(operational) aspect = a; }
 };
 
+std::string_view toString(SignalAspect aspect);
+
 } // namespace tca

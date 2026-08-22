@@ -24,7 +24,7 @@ public:
     std::vector<ConflictInfo> update(const std::vector<TrainData>& snapshot,
                                      double simNow);
 
-    const std::vector<ConflictInfo>& activeConflicts() const;
+    std::vector<ConflictInfo> activeConflicts() const;
 
     void clearResolved();
 
